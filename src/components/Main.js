@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import QuoteBox from "./QuoteBox";
 import quotesData from "./quotesData";
 
+
 export default function Main() {
   // Set state
   const [currentQuote, setCurrentQuote] = useState(null);
@@ -9,7 +10,7 @@ export default function Main() {
   // Function to generate a random quote
   function generateQuote() {
     const numRange = quotesData.length;
-    const randomNumber = Math.floor(Math.random * numRange);
+    const randomNumber = Math.floor(Math.random() * numRange);
     const randomQuote = quotesData[randomNumber];
     setCurrentQuote(randomQuote);
 

@@ -1,6 +1,7 @@
 import React from "react";
 import quotesData from "./quotesData";
 
+
 //rendered quote box component
 export default function QuoteBox(props) {
   return (
