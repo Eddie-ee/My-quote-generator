@@ -16,9 +16,12 @@ export default function Main() {
 
     return (
       <div className="main--div">
-        <button onClick={generateQuote}>Generate Quote</button>
-        {currentQuote && <QuoteBox quote={currentQuote} />}
+        <QuoteBox/>
       </div>
     );
   }
 }
+
+
+{/* <button onClick={generateQuote}>Generate Quote</button> */}
+        //{currentQuote && <QuoteBox quote={currentQuote} />}
