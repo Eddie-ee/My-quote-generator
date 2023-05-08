@@ -5,7 +5,7 @@ import quotesData from "./quotesData";
 
 export default function Main() {
   // Set state
-  const [currentQuote, setCurrentQuote] = useState(null);
+   const [currentQuote, setCurrentQuote] = useState(null);
 
   // Function to generate a random quote
   function generateQuote() {
@@ -13,15 +13,13 @@ export default function Main() {
     const randomNumber = Math.floor(Math.random() * numRange);
     const randomQuote = quotesData[randomNumber];
     setCurrentQuote(randomQuote);
+  }
 
     return (
       <div className="main--div">
-        <QuoteBox/>
+        <button onClick={generateQuote}>Generate Quote</button>
+      {currentQuote && <QuoteBox quote={currentQuote} />}
       </div>
     );
   }
-}
 
-
-{/* <button onClick={generateQuote}>Generate Quote</button> */}
-        //{currentQuote && <QuoteBox quote={currentQuote} />}
