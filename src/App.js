@@ -8,7 +8,6 @@ export default function App() {
     <div className="App">
       <Header />
       <Main />
-      <h1>hello!</h1>
     </div>
   );
 }

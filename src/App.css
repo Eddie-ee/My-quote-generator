@@ -18,7 +18,8 @@ Header {
 }
 
 button {
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
   height: 60px;
   width: 180px;
   border-radius: 7px;
@@ -40,8 +41,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  color: rgb(235, 23, 224);
+  background-color: rgb(15, 15, 16);
+  color: rgb(241, 240, 232);
   font-size: xx-large;
   font-weight: bold;
   padding-bottom: 5px;
@@ -59,7 +60,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: rgb(15, 15, 16);
   padding-bottom: 20px;
   max-width: 750px;
   min-width: 350px;
